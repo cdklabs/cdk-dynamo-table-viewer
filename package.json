@@ -1,7 +1,7 @@
 {
   "name": "cdk-dynamo-table-viewer",
-  "version": "1.0.0",
-  "description": "A CDK construct which exposes an endpoint with the contents of a DynamoDB table",
+  "version": "0.1.0",
+  "description": "A demo AWS CDK construct which exposes a DynamoDB table as an HTTP endpoint",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
