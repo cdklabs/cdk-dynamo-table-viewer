@@ -48,9 +48,7 @@ export class TableViewer extends cdk.Construct {
 
     props.table.grantReadData(handler.role);
 
-    const home = new apigw.LambdaRestApi(this, 'ViewerEndpoint', { handler, proxyPath: '/' });
-    home.root.addMethod('ANY');
-
+    const home = new apigw.LambdaRestApi(this, 'ViewerEndpoint', { handler });
     this.endpoint = home.url;
   }
 }
