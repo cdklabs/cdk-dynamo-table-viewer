@@ -23,7 +23,7 @@ import { TableViewer } from 'cdk-dynamo-table-viewer'
 const viewer = new TableViewer(this, 'CookiesViewer', {
   table: cookiesTable,
   title: 'Cookie Sales', // optional
-  sort: '-sales'         // optional ("-" denotes descending order)
+  sortBy: '-sales'       // optional ("-" denotes descending order)
 });
 ```
 
