@@ -29,13 +29,13 @@
   },
   "homepage": "https://github.com/eladb/cdk-dynamo-table-viewer#readme",
   "devDependencies": {
-    "@types/node": "^10.12.0",
-    "typescript": "^3.1.3"
+    "@types/node": "^10.12.18",
+    "typescript": "^3.2.2"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^0.21.0",
-    "@aws-cdk/aws-dynamodb": "^0.21.0",
-    "@aws-cdk/aws-lambda": "^0.21.0",
-    "@aws-cdk/cdk": "^0.21.0"
+    "@aws-cdk/aws-apigateway": "^0.22.0",
+    "@aws-cdk/aws-dynamodb": "^0.22.0",
+    "@aws-cdk/aws-lambda": "^0.22.0",
+    "@aws-cdk/cdk": "^0.22.0"
   }
 }
