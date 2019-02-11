@@ -1,5 +1,8 @@
+dist
 *.js
 *.d.ts
+.jsii
+tsconfig.json
 
 # Created by https://www.gitignore.io/api/node
 

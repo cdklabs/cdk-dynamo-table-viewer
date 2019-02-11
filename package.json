@@ -5,9 +5,22 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "prepublish": "npm run build"
+    "build": "jsii",
+    "watch": "jsii -w",
+    "prepublish": "npm run build",
+    "build:bindings": "jsii-pacmak"
+  },
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "java": {
+        "package": "software.amazon.awscdk.samples.tableviewer",
+        "maven": {
+          "groupId": "software.amazon.awscdk.samples",
+          "artifactId": "tableviewer"
+        }
+      }
+    }
   },
   "repository": {
     "type": "git",
@@ -30,9 +43,16 @@
   "homepage": "https://github.com/eladb/cdk-dynamo-table-viewer#readme",
   "devDependencies": {
     "@types/node": "^10.12.18",
-    "typescript": "^3.2.2"
+    "jsii": "^0.7.14",
+    "jsii-pacmak": "^0.7.14"
   },
   "dependencies": {
+    "@aws-cdk/aws-apigateway": "^0.22.0",
+    "@aws-cdk/aws-dynamodb": "^0.22.0",
+    "@aws-cdk/aws-lambda": "^0.22.0",
+    "@aws-cdk/cdk": "^0.22.0"
+  },
+  "peerDependencies": {
     "@aws-cdk/aws-apigateway": "^0.22.0",
     "@aws-cdk/aws-dynamodb": "^0.22.0",
     "@aws-cdk/aws-lambda": "^0.22.0",
