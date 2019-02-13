@@ -8,7 +8,7 @@
     "build": "jsii",
     "watch": "jsii -w",
     "prepublish": "npm run build",
-    "build:bindings": "jsii-pacmak"
+    "package": "jsii-pacmak"
   },
   "jsii": {
     "outdir": "dist",
