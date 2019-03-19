@@ -1,41 +1,24 @@
 {
   "name": "cdk-dynamo-table-viewer",
-  "version": "0.1.12",
-  "description": "A demo AWS CDK construct which exposes a DynamoDB table as an HTTP endpoint",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "version": "0.1.0",
+  "bin": {
+    "cdk-dynamo-table-viewer": "bin/cdk-dynamo-table-viewer.js"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "prepublish": "npm run build"
+    "cdk": "cdk"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eladb/cdk-dynamo-table-viewer.git"
-  },
-  "keywords": [
-    "aws-cdk",
-    "cdk",
-    "construct",
-    "dynamodb"
-  ],
-  "author": {
-    "email": "benisrae@amazon.com",
-    "name": "Elad Ben-Israel"
-  },
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/eladb/cdk-dynamo-table-viewer/issues"
-  },
-  "homepage": "https://github.com/eladb/cdk-dynamo-table-viewer#readme",
   "devDependencies": {
-    "@types/node": "^10.12.18",
-    "typescript": "^3.2.2"
+    "@types/node": "8.10.40",
+    "typescript": "^3.3.3333",
+    "aws-cdk": "^0.25.3"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^0.22.0",
-    "@aws-cdk/aws-dynamodb": "^0.22.0",
-    "@aws-cdk/aws-lambda": "^0.22.0",
-    "@aws-cdk/cdk": "^0.22.0"
+    "@aws-cdk/aws-apigateway": "^0.25.3",
+    "@aws-cdk/aws-dynamodb": "^0.25.3",
+    "@aws-cdk/aws-lambda": "^0.25.3",
+    "@aws-cdk/cdk": "^0.25.3",
+    "source-map-support": "^0.5.9"
   }
 }
