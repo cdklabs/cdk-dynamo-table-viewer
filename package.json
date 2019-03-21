@@ -1,18 +1,13 @@
 {
   "name": "cdk-dynamo-table-viewer",
   "version": "1.0.0",
-  "bin": {
-    "cdk-dynamo-table-viewer": "bin/cdk-dynamo-table-viewer.js"
-  },
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -w",
-    "cdk": "cdk"
+    "watch": "tsc -w"
   },
   "devDependencies": {
     "@types/node": "11.11.4",
-    "typescript": "^3.3.4000",
-    "aws-cdk": "^0.26.0"
+    "typescript": "^3.3.4000"
   },
   "dependencies": {
     "@aws-cdk/aws-apigateway": "^0.26.0",
