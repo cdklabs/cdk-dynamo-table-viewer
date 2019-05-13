@@ -1,19 +1,24 @@
 {
   "name": "cdk-dynamo-table-viewer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w"
+  },
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eladb/cdk-dynamo-table-viewer.git"
   },
   "devDependencies": {
     "@types/node": "11.11.4",
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^0.26.0",
-    "@aws-cdk/aws-dynamodb": "^0.26.0",
-    "@aws-cdk/aws-lambda": "^0.26.0",
-    "@aws-cdk/cdk": "^0.26.0",
+    "@aws-cdk/aws-apigateway": "^0.31.0",
+    "@aws-cdk/aws-dynamodb": "^0.31.0",
+    "@aws-cdk/aws-lambda": "^0.31.0",
+    "@aws-cdk/cdk": "^0.31.0",
     "source-map-support": "^0.5.11"
   }
 }
