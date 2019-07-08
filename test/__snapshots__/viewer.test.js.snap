@@ -31,6 +31,10 @@ Object {
     },
   },
   "Parameters": Object {
+    "viewerRenderedCodeArtifactHashA6A51A03": Object {
+      "Description": "Artifact hash for asset \\"test/viewer/Rendered/Code\\"",
+      "Type": "String",
+    },
     "viewerRenderedCodeS3BucketF3062D53": Object {
       "Description": "S3 bucket for asset \\"test/viewer/Rendered/Code\\"",
       "Type": "String",
@@ -42,6 +46,7 @@ Object {
   },
   "Resources": Object {
     "MyTable794EDED1": Object {
+      "DeletionPolicy": "Retain",
       "Properties": Object {
         "AttributeDefinitions": Array [
           Object {

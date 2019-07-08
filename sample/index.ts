@@ -1,6 +1,6 @@
 import dynamodb = require('@aws-cdk/aws-dynamodb');
 import { TableViewer } from '../lib';
-import { Construct, StackProps, Stack, App } from '@aws-cdk/cdk';
+import { Construct, StackProps, Stack, App } from '@aws-cdk/core';
 
 class MyStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps = {}) {
@@ -8,7 +8,7 @@ class MyStack extends Stack {
 
     const table = new dynamodb.Table(this, 'my-table', {
       partitionKey: {
-        name: 'id', type: dynamodb.AttributeType.String
+        name: 'id', type: dynamodb.AttributeType.STRING
       }
     });
 

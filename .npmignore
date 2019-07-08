@@ -4,3 +4,7 @@
 .cdk.staging
 
 !.jsii
+
+
+# Exclude jsii outdir
+dist

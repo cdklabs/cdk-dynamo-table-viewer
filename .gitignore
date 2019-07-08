@@ -1,5 +1,6 @@
 tsconfig.json
 .jsii
+dist/
 
 *.js
 *.d.ts

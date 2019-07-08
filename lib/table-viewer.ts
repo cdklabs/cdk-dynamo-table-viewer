@@ -1,4 +1,4 @@
-import cdk = require('@aws-cdk/cdk');
+import cdk = require('@aws-cdk/core');
 import apigw = require('@aws-cdk/aws-apigateway');
 import lambda = require('@aws-cdk/aws-lambda');
 import dynamodb = require('@aws-cdk/aws-dynamodb');
@@ -37,7 +37,7 @@ export class TableViewer extends cdk.Construct {
 
     const handler = new lambda.Function(this, 'Rendered', {
       code: lambda.Code.asset(path.join(__dirname, 'lambda')),
-      runtime: lambda.Runtime.NodeJS810,
+      runtime: lambda.Runtime.NODEJS_8_10,
       handler: 'index.handler',
       environment: {
         TABLE_NAME: props.table.tableName,
