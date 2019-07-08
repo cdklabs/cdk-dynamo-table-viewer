@@ -1,10 +1,10 @@
 {
   "name": "cdk-dynamo-table-viewer",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "scripts": {
     "build": "jsii",
     "watch": "jsii -w",
-    "package": "jsii-pacmak",
+    "package": "jsii-pacmak -vv",
     "test": "jest",
     "cdk": "cdk"
   },
