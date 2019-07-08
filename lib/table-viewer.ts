@@ -9,19 +9,19 @@ export interface TableViewerProps {
    * The DynamoDB table to view. Note that all contents of this table will be
    * visible to the public.
    */
-  table: dynamodb.Table;
+  readonly table: dynamodb.Table;
 
   /**
    * The web page title.
-   * @default No title
+   * @default - No title
    */
-  title?: string;
+  readonly title?: string;
 
   /**
    * Name of the column to sort by, prefix with "-" for descending order.
-   * @default No sort
+   * @default - No sort
    */
-  sortBy?: string;
+  readonly sortBy?: string;
 }
 
 /**

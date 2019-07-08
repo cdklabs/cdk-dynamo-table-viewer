@@ -1,3 +1,6 @@
+tsconfig.json
+.jsii
+
 *.js
 *.d.ts
 .cdk.staging

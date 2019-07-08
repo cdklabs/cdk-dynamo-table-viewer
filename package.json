@@ -2,23 +2,63 @@
   "name": "cdk-dynamo-table-viewer",
   "version": "2.0.1",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w"
+    "build": "jsii",
+    "watch": "jsii -w",
+    "package": "jsii-pacmak",
+    "test": "jest",
+    "cdk": "cdk"
   },
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "java": {
+        "package": "com.github.eladb.dynamotableviewer",
+        "maven": {
+          "groupId": "com.github.eladb",
+          "artifactId": "cdk-dynamo-table-viewer"
+        }
+      },
+      "python": {
+        "distName": "cdk-dynamo-table-viewer",
+        "module": "cdk_dynamo_table_viewer"
+      }
+    }
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ]
+  },
+  "author": {
+    "email": "elad.benisrael@gmail.com",
+    "name": "Elad Ben-Israel",
+    "url": "https://github.com/eladb"
+  },
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/eladb/cdk-dynamo-table-viewer.git"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.15",
     "@types/node": "11.11.4",
-    "typescript": "^3.3.4000"
+    "jest": "^24.8.0",
+    "jsii": "^0.13.4",
+    "jsii-pacmak": "^0.13.4",
+    "typescript": "^3.5.2"
   },
   "dependencies": {
     "@aws-cdk/aws-apigateway": "^0.31.0",
     "@aws-cdk/aws-dynamodb": "^0.31.0",
     "@aws-cdk/aws-lambda": "^0.31.0",
-    "@aws-cdk/cdk": "^0.31.0",
-    "source-map-support": "^0.5.11"
+    "@aws-cdk/cdk": "^0.31.0"
+  },
+  "peerDependencies": {
+    "@aws-cdk/aws-apigateway": "^0.31.0",
+    "@aws-cdk/aws-dynamodb": "^0.31.0",
+    "@aws-cdk/aws-lambda": "^0.31.0",
+    "@aws-cdk/cdk": "^0.31.0"
   }
 }
