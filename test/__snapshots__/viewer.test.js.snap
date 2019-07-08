@@ -66,6 +66,7 @@ Object {
         },
       },
       "Type": "AWS::DynamoDB::Table",
+      "UpdateReplacePolicy": "Retain",
     },
     "viewerRenderedApiPermissionANYCDFA475E": Object {
       "Properties": Object {
