@@ -33,7 +33,7 @@ Notes:
   It will also be exported as a stack output.
 - Paging is not supported. This means that only the first 1MB of items will be
   displayed (again, this is a demo...)
-- Supports CDK version 0.31.0
+- Supports CDK version 0.38.0 and above
 
 ## License
 
