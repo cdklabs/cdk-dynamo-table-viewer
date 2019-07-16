@@ -1,6 +1,6 @@
 {
   "name": "cdk-dynamo-table-viewer",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "scripts": {
     "build": "jsii",
     "watch": "jsii -w",
