@@ -12,6 +12,7 @@
   "types": "lib/index.d.ts",
   "jsii": {
     "outdir": "dist",
+    "versionFormat": "short",
     "targets": {
       "java": {
         "package": "com.github.eladb.dynamotableviewer",
@@ -23,6 +24,11 @@
       "python": {
         "distName": "cdk-dynamo-table-viewer",
         "module": "cdk_dynamo_table_viewer"
+      },
+      "dotnet": {
+        "namespace": "Eladb.DynamoTableViewer",
+        "packageId": "Eladb.DynamoTableViewer",
+        "signAssembly": false
       }
     }
   },
@@ -42,23 +48,24 @@
     "url": "https://github.com/eladb/cdk-dynamo-table-viewer.git"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.15",
-    "@types/node": "12.6.3",
-    "jest": "^24.8.0",
-    "jsii": "^0.14.0",
-    "jsii-pacmak": "^0.14.0",
-    "typescript": "^3.5.3"
+    "@types/jest": "^24.0.23",
+    "@types/node": "12.12.11",
+    "jest": "^24.9.0",
+    "jsii": "^0.20.7",
+    "jsii-pacmak": "^0.20.7",
+    "typescript": "^3.7.2"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.0.0",
-    "@aws-cdk/aws-dynamodb": "^1.0.0",
-    "@aws-cdk/aws-lambda": "^1.0.0",
-    "@aws-cdk/core": "^1.0.0"
+    "@aws-cdk/aws-apigateway": "^1.17.1",
+    "@aws-cdk/aws-dynamodb": "^1.17.1",
+    "@aws-cdk/aws-lambda": "^1.17.1",
+    "@aws-cdk/core": "^1.17.1"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-apigateway": "^1.0.0",
-    "@aws-cdk/aws-dynamodb": "^1.0.0",
-    "@aws-cdk/aws-lambda": "^1.0.0",
-    "@aws-cdk/core": "^1.0.0"
-  }
+    "@aws-cdk/aws-apigateway": "^1.17.1",
+    "@aws-cdk/aws-dynamodb": "^1.17.1",
+    "@aws-cdk/aws-lambda": "^1.17.1",
+    "@aws-cdk/core": "^1.17.1"
+  },
+  "stability": "experimental"
 }

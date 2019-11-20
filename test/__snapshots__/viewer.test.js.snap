@@ -31,16 +31,16 @@ Object {
     },
   },
   "Parameters": Object {
-    "viewerRenderedCodeArtifactHashA6A51A03": Object {
-      "Description": "Artifact hash for asset \\"test/viewer/Rendered/Code\\"",
+    "AssetParameters660d8bf7cda14859490736e7f257eb2061f9d1198652ff9682416db4ec6f196aArtifactHash40F01C63": Object {
+      "Description": "Artifact hash for asset \\"660d8bf7cda14859490736e7f257eb2061f9d1198652ff9682416db4ec6f196a\\"",
       "Type": "String",
     },
-    "viewerRenderedCodeS3BucketF3062D53": Object {
-      "Description": "S3 bucket for asset \\"test/viewer/Rendered/Code\\"",
+    "AssetParameters660d8bf7cda14859490736e7f257eb2061f9d1198652ff9682416db4ec6f196aS3BucketCD3E0BAE": Object {
+      "Description": "S3 bucket for asset \\"660d8bf7cda14859490736e7f257eb2061f9d1198652ff9682416db4ec6f196a\\"",
       "Type": "String",
     },
-    "viewerRenderedCodeS3VersionKey5D306085": Object {
-      "Description": "S3 key for asset version \\"test/viewer/Rendered/Code\\"",
+    "AssetParameters660d8bf7cda14859490736e7f257eb2061f9d1198652ff9682416db4ec6f196aS3VersionKey7681BC56": Object {
+      "Description": "S3 key for asset version \\"660d8bf7cda14859490736e7f257eb2061f9d1198652ff9682416db4ec6f196a\\"",
       "Type": "String",
     },
   },
@@ -68,162 +68,6 @@ Object {
       "Type": "AWS::DynamoDB::Table",
       "UpdateReplacePolicy": "Retain",
     },
-    "viewerRenderedApiPermissionANYCDFA475E": Object {
-      "Properties": Object {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": Object {
-          "Fn::GetAtt": Array [
-            "viewerRenderedEEFA1E5E",
-            "Arn",
-          ],
-        },
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": Object {
-          "Fn::Join": Array [
-            "",
-            Array [
-              "arn:",
-              Object {
-                "Ref": "AWS::Partition",
-              },
-              ":execute-api:",
-              Object {
-                "Ref": "AWS::Region",
-              },
-              ":",
-              Object {
-                "Ref": "AWS::AccountId",
-              },
-              ":",
-              Object {
-                "Ref": "viewerViewerEndpointDED2DEA4",
-              },
-              "/",
-              Object {
-                "Ref": "viewerViewerEndpointDeploymentStageprod95943DC5",
-              },
-              "/*/",
-            ],
-          ],
-        },
-      },
-      "Type": "AWS::Lambda::Permission",
-    },
-    "viewerRenderedApiPermissionANYproxyF60D17F7": Object {
-      "Properties": Object {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": Object {
-          "Fn::GetAtt": Array [
-            "viewerRenderedEEFA1E5E",
-            "Arn",
-          ],
-        },
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": Object {
-          "Fn::Join": Array [
-            "",
-            Array [
-              "arn:",
-              Object {
-                "Ref": "AWS::Partition",
-              },
-              ":execute-api:",
-              Object {
-                "Ref": "AWS::Region",
-              },
-              ":",
-              Object {
-                "Ref": "AWS::AccountId",
-              },
-              ":",
-              Object {
-                "Ref": "viewerViewerEndpointDED2DEA4",
-              },
-              "/",
-              Object {
-                "Ref": "viewerViewerEndpointDeploymentStageprod95943DC5",
-              },
-              "/*/{proxy+}",
-            ],
-          ],
-        },
-      },
-      "Type": "AWS::Lambda::Permission",
-    },
-    "viewerRenderedApiPermissionTestANYAB12F40E": Object {
-      "Properties": Object {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": Object {
-          "Fn::GetAtt": Array [
-            "viewerRenderedEEFA1E5E",
-            "Arn",
-          ],
-        },
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": Object {
-          "Fn::Join": Array [
-            "",
-            Array [
-              "arn:",
-              Object {
-                "Ref": "AWS::Partition",
-              },
-              ":execute-api:",
-              Object {
-                "Ref": "AWS::Region",
-              },
-              ":",
-              Object {
-                "Ref": "AWS::AccountId",
-              },
-              ":",
-              Object {
-                "Ref": "viewerViewerEndpointDED2DEA4",
-              },
-              "/test-invoke-stage/*/",
-            ],
-          ],
-        },
-      },
-      "Type": "AWS::Lambda::Permission",
-    },
-    "viewerRenderedApiPermissionTestANYproxy9F4CBAB6": Object {
-      "Properties": Object {
-        "Action": "lambda:InvokeFunction",
-        "FunctionName": Object {
-          "Fn::GetAtt": Array [
-            "viewerRenderedEEFA1E5E",
-            "Arn",
-          ],
-        },
-        "Principal": "apigateway.amazonaws.com",
-        "SourceArn": Object {
-          "Fn::Join": Array [
-            "",
-            Array [
-              "arn:",
-              Object {
-                "Ref": "AWS::Partition",
-              },
-              ":execute-api:",
-              Object {
-                "Ref": "AWS::Region",
-              },
-              ":",
-              Object {
-                "Ref": "AWS::AccountId",
-              },
-              ":",
-              Object {
-                "Ref": "viewerViewerEndpointDED2DEA4",
-              },
-              "/test-invoke-stage/*/{proxy+}",
-            ],
-          ],
-        },
-      },
-      "Type": "AWS::Lambda::Permission",
-    },
     "viewerRenderedEEFA1E5E": Object {
       "DependsOn": Array [
         "viewerRenderedServiceRoleDefaultPolicy196964DF",
@@ -232,7 +76,7 @@ Object {
       "Properties": Object {
         "Code": Object {
           "S3Bucket": Object {
-            "Ref": "viewerRenderedCodeS3BucketF3062D53",
+            "Ref": "AssetParameters660d8bf7cda14859490736e7f257eb2061f9d1198652ff9682416db4ec6f196aS3BucketCD3E0BAE",
           },
           "S3Key": Object {
             "Fn::Join": Array [
@@ -245,7 +89,7 @@ Object {
                       "Fn::Split": Array [
                         "||",
                         Object {
-                          "Ref": "viewerRenderedCodeS3VersionKey5D306085",
+                          "Ref": "AssetParameters660d8bf7cda14859490736e7f257eb2061f9d1198652ff9682416db4ec6f196aS3VersionKey7681BC56",
                         },
                       ],
                     },
@@ -258,7 +102,7 @@ Object {
                       "Fn::Split": Array [
                         "||",
                         Object {
-                          "Ref": "viewerRenderedCodeS3VersionKey5D306085",
+                          "Ref": "AssetParameters660d8bf7cda14859490736e7f257eb2061f9d1198652ff9682416db4ec6f196aS3VersionKey7681BC56",
                         },
                       ],
                     },
@@ -270,9 +114,11 @@ Object {
         },
         "Environment": Object {
           "Variables": Object {
+            "SORT_BY": "",
             "TABLE_NAME": Object {
               "Ref": "MyTable794EDED1",
             },
+            "TITLE": "",
           },
         },
         "Handler": "index.handler",
@@ -294,17 +140,7 @@ Object {
               "Action": "sts:AssumeRole",
               "Effect": "Allow",
               "Principal": Object {
-                "Service": Object {
-                  "Fn::Join": Array [
-                    "",
-                    Array [
-                      "lambda.",
-                      Object {
-                        "Ref": "AWS::URLSuffix",
-                      },
-                    ],
-                  ],
-                },
+                "Service": "lambda.amazonaws.com",
               },
             },
           ],
@@ -408,6 +244,84 @@ Object {
       },
       "Type": "AWS::ApiGateway::Method",
     },
+    "viewerViewerEndpointANYApiPermissionTesttestviewerViewerEndpointDCCECA7FANYF9156524": Object {
+      "Properties": Object {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": Object {
+          "Fn::GetAtt": Array [
+            "viewerRenderedEEFA1E5E",
+            "Arn",
+          ],
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": Object {
+          "Fn::Join": Array [
+            "",
+            Array [
+              "arn:",
+              Object {
+                "Ref": "AWS::Partition",
+              },
+              ":execute-api:",
+              Object {
+                "Ref": "AWS::Region",
+              },
+              ":",
+              Object {
+                "Ref": "AWS::AccountId",
+              },
+              ":",
+              Object {
+                "Ref": "viewerViewerEndpointDED2DEA4",
+              },
+              "/test-invoke-stage/*/",
+            ],
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "viewerViewerEndpointANYApiPermissiontestviewerViewerEndpointDCCECA7FANY731E84A4": Object {
+      "Properties": Object {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": Object {
+          "Fn::GetAtt": Array [
+            "viewerRenderedEEFA1E5E",
+            "Arn",
+          ],
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": Object {
+          "Fn::Join": Array [
+            "",
+            Array [
+              "arn:",
+              Object {
+                "Ref": "AWS::Partition",
+              },
+              ":execute-api:",
+              Object {
+                "Ref": "AWS::Region",
+              },
+              ":",
+              Object {
+                "Ref": "AWS::AccountId",
+              },
+              ":",
+              Object {
+                "Ref": "viewerViewerEndpointDED2DEA4",
+              },
+              "/",
+              Object {
+                "Ref": "viewerViewerEndpointDeploymentStageprod95943DC5",
+              },
+              "/*/",
+            ],
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
     "viewerViewerEndpointAccount1D965397": Object {
       "DependsOn": Array [
         "viewerViewerEndpointDED2DEA4",
@@ -430,17 +344,7 @@ Object {
               "Action": "sts:AssumeRole",
               "Effect": "Allow",
               "Principal": Object {
-                "Service": Object {
-                  "Fn::Join": Array [
-                    "",
-                    Array [
-                      "apigateway.",
-                      Object {
-                        "Ref": "AWS::URLSuffix",
-                      },
-                    ],
-                  ],
-                },
+                "Service": "apigateway.amazonaws.com",
               },
             },
           ],
@@ -509,6 +413,84 @@ Object {
         },
       },
       "Type": "AWS::ApiGateway::Resource",
+    },
+    "viewerViewerEndpointproxyANYApiPermissionTesttestviewerViewerEndpointDCCECA7FANYproxyC67CDEE2": Object {
+      "Properties": Object {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": Object {
+          "Fn::GetAtt": Array [
+            "viewerRenderedEEFA1E5E",
+            "Arn",
+          ],
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": Object {
+          "Fn::Join": Array [
+            "",
+            Array [
+              "arn:",
+              Object {
+                "Ref": "AWS::Partition",
+              },
+              ":execute-api:",
+              Object {
+                "Ref": "AWS::Region",
+              },
+              ":",
+              Object {
+                "Ref": "AWS::AccountId",
+              },
+              ":",
+              Object {
+                "Ref": "viewerViewerEndpointDED2DEA4",
+              },
+              "/test-invoke-stage/*/{proxy+}",
+            ],
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
+    },
+    "viewerViewerEndpointproxyANYApiPermissiontestviewerViewerEndpointDCCECA7FANYproxy04819798": Object {
+      "Properties": Object {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": Object {
+          "Fn::GetAtt": Array [
+            "viewerRenderedEEFA1E5E",
+            "Arn",
+          ],
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": Object {
+          "Fn::Join": Array [
+            "",
+            Array [
+              "arn:",
+              Object {
+                "Ref": "AWS::Partition",
+              },
+              ":execute-api:",
+              Object {
+                "Ref": "AWS::Region",
+              },
+              ":",
+              Object {
+                "Ref": "AWS::AccountId",
+              },
+              ":",
+              Object {
+                "Ref": "viewerViewerEndpointDED2DEA4",
+              },
+              "/",
+              Object {
+                "Ref": "viewerViewerEndpointDeploymentStageprod95943DC5",
+              },
+              "/*/{proxy+}",
+            ],
+          ],
+        },
+      },
+      "Type": "AWS::Lambda::Permission",
     },
     "viewerViewerEndpointproxyANYF7759A2A": Object {
       "Properties": Object {

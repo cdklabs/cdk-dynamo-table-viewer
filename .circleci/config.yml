@@ -2,28 +2,34 @@ version: 2.0
 jobs:
   build:
     docker:
-     - image: eladb/superchain
+     - image: jsii/superchain
     steps:
       - checkout
       - run:
           name: install
-          command: npm install
+          command: yarn install --frozen-lockfile
       - run:
           name: build
-          command: npm run build
+          command: yarn build
       - run:
           name: test
-          command: npm test
+          command: yarn test
       - run:
           name: package
-          command: npm run package
+          command: yarn package
       - run:
           name: publish to npm
           command: |
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-            npm publish dist/js/*
+            scripts/publish-npm.sh dist/js
       - run:
           name: publish to pypi
           command: |
-            python3 -m pip install --user --upgrade twine
-            python3 -m twine upload dist/python/*
+            scripts/publish-pypi.sh dist/python
+      - run:
+          name: publish to maven
+          command: |
+            scripts/publish-maven.sh dist/java
+      - run:
+          name: publish to nuget
+          command: |
+            scripts/publish-nuget.sh dist/dotnet

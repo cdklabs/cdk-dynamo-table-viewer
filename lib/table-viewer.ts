@@ -41,8 +41,8 @@ export class TableViewer extends cdk.Construct {
       handler: 'index.handler',
       environment: {
         TABLE_NAME: props.table.tableName,
-        TITLE: props.title,
-        SORT_BY: props.sortBy
+        TITLE: props.title || '',
+        SORT_BY: props.sortBy || ''
       }
     });
 
