@@ -5,6 +5,7 @@ jobs:
      - image: jsii/superchain
     steps:
       - run:
+          name: fix ssh permissions
           command: chmod 600 /root/.ssh/config
       - checkout
       - run:

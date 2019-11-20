@@ -7,7 +7,18 @@ __SECURITY NOTE__: this construct was built for demonstration purposes and
 using it in production is probably a really bad idea. It exposes the entire
 contents of a DynamoDB table in your account to the general public.
 
-## Usage
+
+The library is published under the following names:
+
+|Language|Repository
+|--------|-----------
+|JavaScript/TypeScript|[cdk-dynamo-table-viewer](https://www.npmjs.com/package/cdk-dynamo-table-viewer)
+|Python|[cdk-dynamo-table-viewer](https://pypi.org/project/cdk-dynamo-table-viewer/)
+|.NET|[Eladb.DynamoTableViewer](https://www.nuget.org/packages/Eladb.DynamoTableViewer/)
+|Java|[com.github.eladb/cdk-dynamo-table-viewer](https://search.maven.org/artifact/com.github.eladb/cdk-dynamo-table-viewer)
+
+
+## Usage (TypeScript/JavaScript)
 
 Install via npm:
 
