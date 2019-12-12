@@ -8,6 +8,7 @@
     "test": "jest",
     "cdk": "cdk"
   },
+  "keywords": [ "cdk", "dynamodb", "sample" ],  
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "jsii": {
