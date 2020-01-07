@@ -37,7 +37,7 @@ export class TableViewer extends cdk.Construct {
 
     const handler = new lambda.Function(this, 'Rendered', {
       code: lambda.Code.asset(path.join(__dirname, 'lambda')),
-      runtime: lambda.Runtime.NODEJS_8_10,
+      runtime: lambda.Runtime.NODEJS_12_X,
       handler: 'index.handler',
       environment: {
         TABLE_NAME: props.table.tableName,
