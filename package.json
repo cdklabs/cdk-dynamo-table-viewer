@@ -57,16 +57,16 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.17.1",
-    "@aws-cdk/aws-dynamodb": "^1.17.1",
-    "@aws-cdk/aws-lambda": "^1.17.1",
-    "@aws-cdk/core": "^1.17.1"
+    "@aws-cdk/aws-apigateway": "1.19.0",
+    "@aws-cdk/aws-dynamodb": "1.19.0",
+    "@aws-cdk/aws-lambda": "1.19.0",
+    "@aws-cdk/core": "1.19.0"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-apigateway": "^1.17.1",
-    "@aws-cdk/aws-dynamodb": "^1.17.1",
-    "@aws-cdk/aws-lambda": "^1.17.1",
-    "@aws-cdk/core": "^1.17.1"
+    "@aws-cdk/aws-apigateway": "1.19.0",
+    "@aws-cdk/aws-dynamodb": "1.19.0",
+    "@aws-cdk/aws-lambda": "1.19.0",
+    "@aws-cdk/core": "1.19.0"
   },
   "stability": "experimental"
 }
