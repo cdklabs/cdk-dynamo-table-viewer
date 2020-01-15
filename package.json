@@ -1,6 +1,6 @@
 {
   "name": "cdk-dynamo-table-viewer",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "scripts": {
     "build": "jsii",
     "watch": "jsii -w",
@@ -41,7 +41,8 @@
   "author": {
     "email": "elad.benisrael@gmail.com",
     "name": "Elad Ben-Israel",
-    "url": "https://github.com/eladb"
+    "url": "https://github.com/eladb",
+    "twitter": "emeshbi",
   },
   "license": "Apache-2.0",
   "repository": {
@@ -49,24 +50,24 @@
     "url": "https://github.com/eladb/cdk-dynamo-table-viewer.git"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "@types/node": "12.12.11",
+    "@types/jest": "^24.9.0",
+    "@types/node": "13.1.7",
     "jest": "^24.9.0",
-    "jsii": "^0.20.7",
-    "jsii-pacmak": "^0.20.7",
-    "typescript": "^3.7.2"
+    "jsii": "^0.21.1",
+    "jsii-pacmak": "^0.21.1",
+    "typescript": "^3.7.4"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "1.19.0",
-    "@aws-cdk/aws-dynamodb": "1.19.0",
-    "@aws-cdk/aws-lambda": "1.19.0",
-    "@aws-cdk/core": "1.19.0"
+    "@aws-cdk/aws-apigateway": "^1.20.0",
+    "@aws-cdk/aws-dynamodb": "^1.20.0",
+    "@aws-cdk/aws-lambda": "^1.20.0",
+    "@aws-cdk/core": "^1.20.0"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-apigateway": "1.19.0",
-    "@aws-cdk/aws-dynamodb": "1.19.0",
-    "@aws-cdk/aws-lambda": "1.19.0",
-    "@aws-cdk/core": "1.19.0"
+    "@aws-cdk/aws-apigateway": "^1.20.0",
+    "@aws-cdk/aws-dynamodb": "^1.20.0",
+    "@aws-cdk/aws-lambda": "^1.20.0",
+    "@aws-cdk/core": "^1.20.0"
   },
   "stability": "experimental"
 }
