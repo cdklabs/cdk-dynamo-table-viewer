@@ -1,6 +1,9 @@
 {
   "name": "cdk-dynamo-table-viewer",
-  "version": "3.1.1",
+  "version": "3.1.2",
+  "awscdkio": { 
+    "twitter": "emeshbi" 
+  },
   "scripts": {
     "build": "jsii",
     "watch": "jsii -w",
@@ -41,8 +44,7 @@
   "author": {
     "email": "elad.benisrael@gmail.com",
     "name": "Elad Ben-Israel",
-    "url": "https://github.com/eladb",
-    "twitter": "emeshbi"
+    "url": "https://github.com/eladb"
   },
   "license": "Apache-2.0",
   "repository": {
