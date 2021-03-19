@@ -1,8 +1,8 @@
 {
   "name": "cdk-dynamo-table-viewer",
   "version": "3.1.2",
-  "awscdkio": { 
-    "twitter": "emeshbi" 
+  "awscdkio": {
+    "twitter": "emeshbi"
   },
   "scripts": {
     "build": "jsii",
@@ -11,7 +11,7 @@
     "test": "jest",
     "cdk": "cdk"
   },
-  "keywords": [ "cdk", "dynamodb", "sample" ],  
+  "keywords": [ "cdk", "dynamodb", "sample" ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "jsii": {
@@ -55,8 +55,8 @@
     "@types/jest": "^24.9.0",
     "@types/node": "13.1.7",
     "jest": "^24.9.0",
-    "jsii": "^0.21.1",
-    "jsii-pacmak": "^0.21.1",
+    "jsii": "^1.25.0",
+    "jsii-pacmak": "^1.25.0",
     "typescript": "^3.7.4"
   },
   "dependencies": {

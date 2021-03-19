@@ -20,6 +20,7 @@ jobs:
       - run:
           name: package
           command: yarn package
+          no_output_timeout: 30m
       - run:
           name: publish to npm
           command: |
