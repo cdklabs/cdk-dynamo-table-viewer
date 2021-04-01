@@ -175,6 +175,7 @@ Object {
                 "dynamodb:Query",
                 "dynamodb:GetItem",
                 "dynamodb:Scan",
+                "dynamodb:ConditionCheckItem",
               ],
               "Effect": "Allow",
               "Resource": Array [
@@ -373,7 +374,7 @@ Object {
       },
       "Type": "AWS::ApiGateway::RestApi",
     },
-    "viewerViewerEndpointDeployment00B06945eaab38fe899ff2d44175a541c249d91c": Object {
+    "viewerViewerEndpointDeployment00B069459b597739070db86e729796710f9f86da": Object {
       "DependsOn": Array [
         "viewerViewerEndpointproxyANYF7759A2A",
         "viewerViewerEndpointproxy103C52F5",
@@ -390,7 +391,7 @@ Object {
     "viewerViewerEndpointDeploymentStageprod95943DC5": Object {
       "Properties": Object {
         "DeploymentId": Object {
-          "Ref": "viewerViewerEndpointDeployment00B06945eaab38fe899ff2d44175a541c249d91c",
+          "Ref": "viewerViewerEndpointDeployment00B069459b597739070db86e729796710f9f86da",
         },
         "RestApiId": Object {
           "Ref": "viewerViewerEndpointDED2DEA4",
@@ -444,7 +445,7 @@ Object {
               Object {
                 "Ref": "viewerViewerEndpointDED2DEA4",
               },
-              "/test-invoke-stage/*/{proxy+}",
+              "/test-invoke-stage/*/*",
             ],
           ],
         },
@@ -485,7 +486,7 @@ Object {
               Object {
                 "Ref": "viewerViewerEndpointDeploymentStageprod95943DC5",
               },
-              "/*/{proxy+}",
+              "/*/*",
             ],
           ],
         },
