@@ -11,7 +11,11 @@
     "test": "jest",
     "cdk": "cdk"
   },
-  "keywords": [ "cdk", "dynamodb", "sample" ],
+  "keywords": [
+    "cdk",
+    "dynamodb",
+    "sample"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "jsii": {
@@ -60,16 +64,16 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.20.0",
-    "@aws-cdk/aws-dynamodb": "^1.20.0",
-    "@aws-cdk/aws-lambda": "^1.20.0",
-    "@aws-cdk/core": "^1.20.0"
+    "@aws-cdk/aws-apigateway": "^1.95.2",
+    "@aws-cdk/aws-dynamodb": "^1.95.2",
+    "@aws-cdk/aws-lambda": "^1.95.2",
+    "@aws-cdk/core": "^1.95.2"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-apigateway": "^1.20.0",
-    "@aws-cdk/aws-dynamodb": "^1.20.0",
-    "@aws-cdk/aws-lambda": "^1.20.0",
-    "@aws-cdk/core": "^1.20.0"
+    "@aws-cdk/aws-apigateway": "^1.95.2",
+    "@aws-cdk/aws-dynamodb": "^1.95.2",
+    "@aws-cdk/aws-lambda": "^1.95.2",
+    "@aws-cdk/core": "^1.95.2"
   },
   "stability": "experimental"
 }
