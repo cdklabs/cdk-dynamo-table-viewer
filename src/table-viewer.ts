@@ -1,8 +1,8 @@
-import cdk = require('@aws-cdk/core');
-import apigw = require('@aws-cdk/aws-apigateway');
-import lambda = require('@aws-cdk/aws-lambda');
-import dynamodb = require('@aws-cdk/aws-dynamodb');
-import path = require('path');
+import * as path from 'path';
+import * as apigw from '@aws-cdk/aws-apigateway';
+import * as dynamodb from '@aws-cdk/aws-dynamodb';
+import * as lambda from '@aws-cdk/aws-lambda';
+import * as cdk from '@aws-cdk/core';
 
 export interface TableViewerProps {
   /**
@@ -36,14 +36,14 @@ export class TableViewer extends cdk.Construct {
     super(parent, id);
 
     const handler = new lambda.Function(this, 'Rendered', {
-      code: lambda.Code.fromAsset(path.join(__dirname, 'lambda')),
+      code: lambda.Code.fromAsset(path.join(__dirname, '..', 'lambda')),
       runtime: lambda.Runtime.NODEJS_12_X,
       handler: 'index.handler',
       environment: {
         TABLE_NAME: props.table.tableName,
         TITLE: props.title || '',
-        SORT_BY: props.sortBy || ''
-      }
+        SORT_BY: props.sortBy || '',
+      },
     });
 
     props.table.grantReadData(handler);

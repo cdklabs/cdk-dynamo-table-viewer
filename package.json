@@ -1,67 +1,65 @@
 {
   "name": "cdk-dynamo-table-viewer",
-  "version": "3.1.2",
-  "awscdkio": {
-    "twitter": "emeshbi"
-  },
-  "scripts": {
-    "build": "jsii",
-    "watch": "jsii -w",
-    "package": "jsii-pacmak -vv",
-    "test": "jest",
-    "cdk": "cdk"
-  },
-  "keywords": [
-    "cdk",
-    "dynamodb",
-    "sample"
-  ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "jsii": {
-    "outdir": "dist",
-    "versionFormat": "short",
-    "targets": {
-      "java": {
-        "package": "com.github.eladb.dynamotableviewer",
-        "maven": {
-          "groupId": "com.github.eladb",
-          "artifactId": "cdk-dynamo-table-viewer"
-        }
-      },
-      "python": {
-        "distName": "cdk-dynamo-table-viewer",
-        "module": "cdk_dynamo_table_viewer"
-      },
-      "dotnet": {
-        "namespace": "Eladb.DynamoTableViewer",
-        "packageId": "Eladb.DynamoTableViewer",
-        "signAssembly": false
-      }
-    }
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "js"
-    ]
-  },
-  "author": {
-    "email": "elad.benisrael@gmail.com",
-    "name": "Elad Ben-Israel",
-    "url": "https://github.com/eladb"
-  },
-  "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eladb/cdk-dynamo-table-viewer.git"
+    "url": "https://github.com/cdklabs/cdk-dynamo-table-viewer.git"
+  },
+  "scripts": {
+    "clobber": "npx projen clobber",
+    "bump": "npx projen bump",
+    "unbump": "npx projen unbump",
+    "compile": "npx projen compile",
+    "test:compile": "npx projen test:compile",
+    "test": "npx projen test",
+    "build": "npx projen build",
+    "test:watch": "npx projen test:watch",
+    "test:update": "npx projen test:update",
+    "upgrade-dependencies": "npx projen upgrade-dependencies",
+    "upgrade-projen": "npx projen upgrade-projen",
+    "default": "npx projen default",
+    "watch": "npx projen watch",
+    "package": "npx projen package",
+    "eslint": "npx projen eslint",
+    "compat": "npx projen compat",
+    "docgen": "npx projen docgen",
+    "projen": "npx projen",
+    "start": "npx projen start"
+  },
+  "author": {
+    "name": "Elad Ben-Israel",
+    "email": "elad.benisrael@gmail.com",
+    "url": "https://github.com/eladb",
+    "organization": false
   },
   "devDependencies": {
+    "@aws-cdk/assert": "^1.95.2",
     "@types/jest": "^26.0.0",
-    "@types/node": "13.1.7",
+    "@types/node": "^10.17.0",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
+    "eslint-import-resolver-node": "^0.3.4",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.23.3",
     "jest": "^26.6.3",
-    "jsii": "^1.25.0",
-    "jsii-pacmak": "^1.25.0",
+    "jest-junit": "^12",
+    "jsii": "^1.29.0",
+    "jsii-diff": "^1.29.0",
+    "jsii-docgen": "^1.8.85",
+    "jsii-pacmak": "^1.29.0",
+    "json-schema": "^0.3.0",
+    "npm-check-updates": "^11",
+    "projen": "^0.18.10",
+    "standard-version": "^9",
+    "ts-jest": "^26.5.6",
     "typescript": "^3.7.4"
+  },
+  "peerDependencies": {
+    "@aws-cdk/aws-apigateway": "^1.95.2",
+    "@aws-cdk/aws-dynamodb": "^1.95.2",
+    "@aws-cdk/aws-lambda": "^1.95.2",
+    "@aws-cdk/core": "^1.95.2",
+    "constructs": "^3.2.27"
   },
   "dependencies": {
     "@aws-cdk/aws-apigateway": "^1.95.2",
@@ -69,11 +67,80 @@
     "@aws-cdk/aws-lambda": "^1.95.2",
     "@aws-cdk/core": "^1.95.2"
   },
-  "peerDependencies": {
-    "@aws-cdk/aws-apigateway": "^1.95.2",
-    "@aws-cdk/aws-dynamodb": "^1.95.2",
-    "@aws-cdk/aws-lambda": "^1.95.2",
-    "@aws-cdk/core": "^1.95.2"
+  "bundledDependencies": [],
+  "keywords": [
+    "cdk"
+  ],
+  "main": "lib/index.js",
+  "license": "Apache-2.0",
+  "version": "0.0.0",
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.ts?(x)",
+      "**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "clearMocks": true,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "clover",
+      "text"
+    ],
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "watchPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "test-reports"
+        }
+      ]
+    ],
+    "preset": "ts-jest",
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.jest.json"
+      }
+    }
   },
-  "stability": "experimental"
+  "types": "lib/index.d.ts",
+  "stability": "stable",
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "java": {
+        "package": "com.github.eladb.dynamotableviewer",
+        "maven": {
+          "groupId": "com.github.eladb",
+          "artifactId": "cdk-dynamo-table-view"
+        }
+      },
+      "python": {
+        "distName": "cdk-dynamo-table-view",
+        "module": "cdk_dynamo_table_view"
+      },
+      "dotnet": {
+        "namespace": "Eladb.DynamoTableViewer",
+        "packageId": "Eladb.DynamoTableViewer"
+      }
+    },
+    "tsc": {
+      "outDir": "lib",
+      "rootDir": "src"
+    }
+  },
+  "awscdkio": {
+    "twitter": "emeshbi"
+  },
+  "//": "~~ Generated by projen. To modify, edit .projenrc.js and run \"npx projen\"."
 }
