@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@aws-cdk/assert",
-      "version": "^1.95.2",
+      "version": "^1.106.0",
       "type": "build"
     },
     {
@@ -92,27 +92,31 @@
       "type": "build"
     },
     {
+      "name": "ts-node",
+      "type": "build"
+    },
+    {
       "name": "typescript",
       "type": "build"
     },
     {
       "name": "@aws-cdk/aws-apigateway",
-      "version": "^1.95.2",
+      "version": "^1.106.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/aws-dynamodb",
-      "version": "^1.95.2",
+      "version": "^1.106.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/aws-lambda",
-      "version": "^1.95.2",
+      "version": "^1.106.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/core",
-      "version": "^1.95.2",
+      "version": "^1.106.0",
       "type": "peer"
     },
     {
@@ -122,22 +126,22 @@
     },
     {
       "name": "@aws-cdk/aws-apigateway",
-      "version": "^1.95.2",
+      "version": "^1.106.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-dynamodb",
-      "version": "^1.95.2",
+      "version": "^1.106.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-lambda",
-      "version": "^1.95.2",
+      "version": "^1.106.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/core",
-      "version": "^1.95.2",
+      "version": "^1.106.0",
       "type": "runtime"
     }
   ],

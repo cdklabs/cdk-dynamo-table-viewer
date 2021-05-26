@@ -10,13 +10,15 @@ const project = new AwsCdkConstructLibrary({
 
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
 
-  cdkVersion: '1.95.2',
+  cdkVersion: '1.106.0',
   cdkDependencies: [
     '@aws-cdk/aws-apigateway',
     '@aws-cdk/aws-dynamodb',
     '@aws-cdk/aws-lambda',
     '@aws-cdk/core',
   ],
+
+  devDeps: ['ts-node'],
 
   catalog: {
     twitter: 'emeshbi',
