@@ -1,13 +1,13 @@
+import * as dynamodb from '@aws-cdk/aws-dynamodb';
 import { Stack, App } from '@aws-cdk/core';
-import dynamodb = require('@aws-cdk/aws-dynamodb');
-import { TableViewer } from '../lib';
+import { TableViewer } from '../src';
 
 test('happy  flow', () => {
   // GIVEN
   const app = new App();
   const stack = new Stack(app, 'test');
   const table = new dynamodb.Table(stack, 'MyTable', {
-    partitionKey: { name: 'id', type: dynamodb.AttributeType.STRING }
+    partitionKey: { name: 'id', type: dynamodb.AttributeType.STRING },
   });
 
   // WHEN

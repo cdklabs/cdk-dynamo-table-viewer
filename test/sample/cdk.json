@@ -1,0 +1,1 @@
+{ "app": "npx ts-node -P ../../tsconfig.jest.json index.ts" }
