@@ -39,6 +39,11 @@ const project = new AwsCdkConstructLibrary({
     dotNetNamespace: 'Eladb.DynamoTableViewer',
     packageId: 'Eladb.DynamoTableViewer',
   },
+  autoApproveOptions: {
+    allowedUsernames: ['aws-cdk-automation'],
+    secret: 'GITHUB_TOKEN',
+  },
+  autoApproveUpgrades: true,
 });
 
 project.synth();
