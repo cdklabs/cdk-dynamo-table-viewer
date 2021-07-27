@@ -1,5 +1,6 @@
 {
   "name": "cdk-dynamo-table-viewer",
+  "description": "An AWS CDK construct which exposes an endpoint with the contents of a DynamoDB table",
   "repository": {
     "type": "git",
     "url": "https://github.com/cdklabs/cdk-dynamo-table-viewer.git"
