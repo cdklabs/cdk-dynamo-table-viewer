@@ -4,6 +4,7 @@ const project = new AwsCdkConstructLibrary({
   defaultReleaseBranch: 'master',
   repositoryUrl: 'https://github.com/cdklabs/cdk-dynamo-table-viewer.git',
   name: 'cdk-dynamo-table-viewer',
+  description: 'An AWS CDK construct which exposes an endpoint with the contents of a DynamoDB table',
   authorName: 'Elad Ben-Israel',
   authorEmail: 'elad.benisrael@gmail.com',
   authorUrl: 'https://github.com/eladb',
