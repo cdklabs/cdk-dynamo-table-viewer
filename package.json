@@ -125,9 +125,9 @@
     "outdir": "dist",
     "targets": {
       "java": {
-        "package": "com.github.eladb.dynamotableviewer",
+        "package": "io.github.cdklabs.dynamotableviewer",
         "maven": {
-          "groupId": "com.github.eladb",
+          "groupId": "io.github.cdklabs",
           "artifactId": "cdk-dynamo-table-view"
         }
       },
@@ -136,8 +136,8 @@
         "module": "cdk_dynamo_table_view"
       },
       "dotnet": {
-        "namespace": "Eladb.DynamoTableViewer",
-        "packageId": "Eladb.DynamoTableViewer"
+        "namespace": "Cdklabs.DynamoTableViewer",
+        "packageId": "Cdklabs.DynamoTableViewer"
       }
     },
     "tsc": {
