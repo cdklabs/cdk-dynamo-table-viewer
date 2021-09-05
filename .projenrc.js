@@ -29,6 +29,7 @@ const project = new AwsCdkConstructLibrary({
     javaPackage: 'io.github.cdklabs.dynamotableviewer',
     mavenGroupId: 'io.github.cdklabs',
     mavenArtifactId: 'cdk-dynamo-table-view',
+    mavenEndpoint: 'https://s01.oss.sonatype.org',
   },
 
   publishToPypi: {
