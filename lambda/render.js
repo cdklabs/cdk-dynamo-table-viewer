@@ -48,7 +48,7 @@ module.exports = function(props) {
         ${ title ? `<div class="header">${title}</div>` : '' }
 
         <table cellspacing="0">
-          <tr>${ renderHeaderRow() }</th>
+          ${ renderHeaderRow() }
           ${ items.map(item => renderItemRow(item)).join('\n') }
         </table>
     </div>
