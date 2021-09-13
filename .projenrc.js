@@ -26,9 +26,10 @@ const project = new AwsCdkConstructLibrary({
   },
 
   publishToMaven: {
-    javaPackage: 'com.github.eladb.dynamotableviewer',
-    mavenGroupId: 'com.github.eladb',
+    javaPackage: 'io.github.cdklabs.dynamotableviewer',
+    mavenGroupId: 'io.github.cdklabs',
     mavenArtifactId: 'cdk-dynamo-table-view',
+    mavenEndpoint: 'https://s01.oss.sonatype.org',
   },
 
   publishToPypi: {
@@ -37,11 +38,12 @@ const project = new AwsCdkConstructLibrary({
   },
 
   publishToNuget: {
-    dotNetNamespace: 'Eladb.DynamoTableViewer',
-    packageId: 'Eladb.DynamoTableViewer',
+    dotNetNamespace: 'Cdklabs.DynamoTableViewer',
+    packageId: 'Cdklabs.DynamoTableViewer',
   },
+
   autoApproveOptions: {
-    allowedUsernames: ['aws-cdk-automation'],
+    allowedUsernames: ['cdklabs-automation'],
     secret: 'GITHUB_TOKEN',
   },
   autoApproveUpgrades: true,
