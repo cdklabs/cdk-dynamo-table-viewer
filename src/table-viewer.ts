@@ -6,6 +6,14 @@ import * as cdk from '@aws-cdk/core';
 
 export interface TableViewerProps {
   /**
+   * The endpoint type of the
+   * [LambdaRestApi](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-apigateway.LambdaRestApi.html)
+   * that will be created
+   * @default - EDGE
+   */
+   readonly endpointType?: apigw.EndpointType;
+
+  /**
    * The DynamoDB table to view. Note that all contents of this table will be
    * visible to the public.
    */
@@ -48,7 +56,12 @@ export class TableViewer extends cdk.Construct {
 
     props.table.grantReadData(handler);
 
-    const home = new apigw.LambdaRestApi(this, 'ViewerEndpoint', { handler });
+    const home = new apigw.LambdaRestApi(this, 'ViewerEndpoint', {
+      handler,
+      endpointConfiguration: {
+        types: [ props.endpointType || apigw.EndpointType.EDGE]
+      }
+    });
     this.endpoint = home.url;
   }
 }
