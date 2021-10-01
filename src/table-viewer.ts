@@ -11,7 +11,7 @@ export interface TableViewerProps {
    * that will be created
    * @default - EDGE
    */
-   readonly endpointType?: apigw.EndpointType;
+  readonly endpointType?: apigw.EndpointType;
 
   /**
    * The DynamoDB table to view. Note that all contents of this table will be
@@ -59,8 +59,8 @@ export class TableViewer extends cdk.Construct {
     const home = new apigw.LambdaRestApi(this, 'ViewerEndpoint', {
       handler,
       endpointConfiguration: {
-        types: [ props.endpointType || apigw.EndpointType.EDGE]
-      }
+        types: [props.endpointType || apigw.EndpointType.EDGE],
+      },
     });
     this.endpoint = home.url;
   }
