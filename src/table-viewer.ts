@@ -58,9 +58,9 @@ export class TableViewer extends cdk.Construct {
 
     const home = new apigw.LambdaRestApi(this, 'ViewerEndpoint', {
       handler,
-      endpointConfiguration: {
-        types: [props.endpointType || apigw.EndpointType.EDGE],
-      },
+      endpointConfiguration: props.endpointType
+        ? { types: [props.endpointType] }
+        : undefined,
     });
     this.endpoint = home.url;
   }
