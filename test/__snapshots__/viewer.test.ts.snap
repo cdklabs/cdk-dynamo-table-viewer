@@ -370,16 +370,11 @@ Object {
     },
     "viewerViewerEndpointDED2DEA4": Object {
       "Properties": Object {
-        "EndpointConfiguration": Object {
-          "Types": Array [
-            "EDGE",
-          ],
-        },
         "Name": "ViewerEndpoint",
       },
       "Type": "AWS::ApiGateway::RestApi",
     },
-    "viewerViewerEndpointDeployment00B0694515023dc5ef1fde3468ea1200b971a120": Object {
+    "viewerViewerEndpointDeployment00B069459b597739070db86e729796710f9f86da": Object {
       "DependsOn": Array [
         "viewerViewerEndpointproxyANYF7759A2A",
         "viewerViewerEndpointproxy103C52F5",
@@ -396,7 +391,7 @@ Object {
     "viewerViewerEndpointDeploymentStageprod95943DC5": Object {
       "Properties": Object {
         "DeploymentId": Object {
-          "Ref": "viewerViewerEndpointDeployment00B0694515023dc5ef1fde3468ea1200b971a120",
+          "Ref": "viewerViewerEndpointDeployment00B069459b597739070db86e729796710f9f86da",
         },
         "RestApiId": Object {
           "Ref": "viewerViewerEndpointDED2DEA4",
