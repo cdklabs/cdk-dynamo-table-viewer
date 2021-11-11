@@ -13,7 +13,6 @@ const project = new AwsCdkConstructLibrary({
 
 
   cdkVersion: '2.0.0-rc.28',
-  majorVersion: '4',
   cdkAssert: false,
   minNodeVersion: '14.17.0',
 
