@@ -1,68 +1,117 @@
-# API Reference
+# API Reference <a name="API Reference"></a>
 
-**Classes**
+## Constructs <a name="Constructs"></a>
 
-Name|Description
-----|-----------
-[TableViewer](#cdk-dynamo-table-viewer-tableviewer)|Installs an endpoint in your stack that allows users to view the contents of a DynamoDB table through their browser.
-
-
-**Structs**
-
-Name|Description
-----|-----------
-[TableViewerProps](#cdk-dynamo-table-viewer-tableviewerprops)|*No description*
-
-
-
-## class TableViewer  <a id="cdk-dynamo-table-viewer-tableviewer"></a>
+### TableViewer <a name="cdk-dynamo-table-viewer.TableViewer"></a>
 
 Installs an endpoint in your stack that allows users to view the contents of a DynamoDB table through their browser.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IConstruct](#aws-cdk-core-iconstruct), [IConstruct](#constructs-iconstruct), [IDependable](#aws-cdk-core-idependable)
-__Extends__: [Construct](#aws-cdk-core-construct)
+#### Initializers <a name="cdk-dynamo-table-viewer.TableViewer.Initializer"></a>
 
-### Initializer
+```typescript
+import { TableViewer } from 'cdk-dynamo-table-viewer'
 
-
-
-
-```ts
 new TableViewer(parent: Construct, id: string, props: TableViewerProps)
 ```
 
-* **parent** (<code>[Construct](#aws-cdk-core-construct)</code>)  *No description*
-* **id** (<code>string</code>)  *No description*
-* **props** (<code>[TableViewerProps](#cdk-dynamo-table-viewer-tableviewerprops)</code>)  *No description*
-  * **table** (<code>[Table](#aws-cdk-aws-dynamodb-table)</code>)  The DynamoDB table to view. 
-  * **endpointType** (<code>[EndpointType](#aws-cdk-aws-apigateway-endpointtype)</code>)  The endpoint type of the [LambdaRestApi](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-apigateway.LambdaRestApi.html) that will be created. __*Default*__: EDGE
-  * **sortBy** (<code>string</code>)  Name of the column to sort by, prefix with "-" for descending order. __*Default*__: No sort
-  * **title** (<code>string</code>)  The web page title. __*Default*__: No title
+##### `parent`<sup>Required</sup> <a name="cdk-dynamo-table-viewer.TableViewer.parameter.parent"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+##### `id`<sup>Required</sup> <a name="cdk-dynamo-table-viewer.TableViewer.parameter.id"></a>
+
+- *Type:* `string`
+
+---
+
+##### `props`<sup>Required</sup> <a name="cdk-dynamo-table-viewer.TableViewer.parameter.props"></a>
+
+- *Type:* [`cdk-dynamo-table-viewer.TableViewerProps`](#cdk-dynamo-table-viewer.TableViewerProps)
+
+---
 
 
 
-### Properties
+#### Properties <a name="Properties"></a>
+
+##### `endpoint`<sup>Required</sup> <a name="cdk-dynamo-table-viewer.TableViewer.property.endpoint"></a>
+
+```typescript
+public readonly endpoint: string;
+```
+
+- *Type:* `string`
+
+---
 
 
-Name | Type | Description 
------|------|-------------
-**endpoint** | <code>string</code> | <span></span>
+## Structs <a name="Structs"></a>
 
+### TableViewerProps <a name="cdk-dynamo-table-viewer.TableViewerProps"></a>
 
+#### Initializer <a name="[object Object].Initializer"></a>
 
-## struct TableViewerProps  <a id="cdk-dynamo-table-viewer-tableviewerprops"></a>
+```typescript
+import { TableViewerProps } from 'cdk-dynamo-table-viewer'
 
+const tableViewerProps: TableViewerProps = { ... }
+```
 
+##### `table`<sup>Required</sup> <a name="cdk-dynamo-table-viewer.TableViewerProps.property.table"></a>
 
+```typescript
+public readonly table: Table;
+```
 
+- *Type:* [`aws-cdk-lib.aws_dynamodb.Table`](#aws-cdk-lib.aws_dynamodb.Table)
 
+The DynamoDB table to view.
 
-Name | Type | Description 
------|------|-------------
-**table** | <code>[Table](#aws-cdk-aws-dynamodb-table)</code> | The DynamoDB table to view.
-**endpointType**? | <code>[EndpointType](#aws-cdk-aws-apigateway-endpointtype)</code> | The endpoint type of the [LambdaRestApi](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-apigateway.LambdaRestApi.html) that will be created.<br/>__*Default*__: EDGE
-**sortBy**? | <code>string</code> | Name of the column to sort by, prefix with "-" for descending order.<br/>__*Default*__: No sort
-**title**? | <code>string</code> | The web page title.<br/>__*Default*__: No title
+Note that all contents of this table will be
+visible to the public.
+
+---
+
+##### `endpointType`<sup>Optional</sup> <a name="cdk-dynamo-table-viewer.TableViewerProps.property.endpointType"></a>
+
+```typescript
+public readonly endpointType: EndpointType;
+```
+
+- *Type:* [`aws-cdk-lib.aws_apigateway.EndpointType`](#aws-cdk-lib.aws_apigateway.EndpointType)
+- *Default:* EDGE
+
+The endpoint type of the [LambdaRestApi](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-apigateway.LambdaRestApi.html) that will be created.
+
+---
+
+##### `sortBy`<sup>Optional</sup> <a name="cdk-dynamo-table-viewer.TableViewerProps.property.sortBy"></a>
+
+```typescript
+public readonly sortBy: string;
+```
+
+- *Type:* `string`
+- *Default:* No sort
+
+Name of the column to sort by, prefix with "-" for descending order.
+
+---
+
+##### `title`<sup>Optional</sup> <a name="cdk-dynamo-table-viewer.TableViewerProps.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* `string`
+- *Default:* No title
+
+The web page title.
+
+---
 
 
 

@@ -38,12 +38,13 @@
     "organization": false
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.106.0",
     "@types/jest": "^27.0.2",
     "@types/node": "^14.17.0",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "eslint": "^7.32.0",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "aws-cdk-lib": "^2.0.0-rc.28",
+    "constructs": "^10.0.5",
+    "eslint": "^8.2.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.3",
@@ -51,7 +52,7 @@
     "jest-junit": "^12",
     "jsii": "^1.43.0",
     "jsii-diff": "^1.43.0",
-    "jsii-docgen": "^1.8.110",
+    "jsii-docgen": "^3.8.24",
     "jsii-pacmak": "^1.43.0",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^11",
@@ -59,25 +60,19 @@
     "standard-version": "^9",
     "ts-jest": "^27.0.7",
     "ts-node": "^9",
-    "typescript": "^3.9.10"
+    "typescript": "^4.4.4"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-apigateway": "^1.106.0",
-    "@aws-cdk/aws-dynamodb": "^1.106.0",
-    "@aws-cdk/aws-lambda": "^1.106.0",
-    "@aws-cdk/core": "^1.106.0",
-    "constructs": "^3.2.27"
-  },
-  "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.106.0",
-    "@aws-cdk/aws-dynamodb": "^1.106.0",
-    "@aws-cdk/aws-lambda": "^1.106.0",
-    "@aws-cdk/core": "^1.106.0"
+    "aws-cdk-lib": "^2.0.0-rc.28",
+    "constructs": "^10.0.5"
   },
   "bundledDependencies": [],
   "keywords": [
     "cdk"
   ],
+  "engines": {
+    "node": ">= 14.17.0"
+  },
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "version": "0.0.0",

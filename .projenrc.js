@@ -11,15 +11,13 @@ const project = new AwsCdkConstructLibrary({
 
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
 
-  cdkVersion: '1.106.0',
-  cdkDependencies: [
-    '@aws-cdk/aws-apigateway',
-    '@aws-cdk/aws-dynamodb',
-    '@aws-cdk/aws-lambda',
-    '@aws-cdk/core',
-  ],
 
-  devDeps: ['ts-node'],
+  cdkVersion: '2.0.0-rc.28',
+  cdkAssert: false,
+  minNodeVersion: '14.17.0',
+
+  devDeps: ['ts-node', 'aws-cdk-lib', 'constructs'],
+  peerDeps: ['aws-cdk-lib', 'constructs'],
 
   catalog: {
     twitter: 'emeshbi',
@@ -45,6 +43,9 @@ const project = new AwsCdkConstructLibrary({
   autoApproveOptions: {
     allowedUsernames: ['cdklabs-automation'],
     secret: 'GITHUB_TOKEN',
+  },
+  depsUpgradeOptions: {
+    exclude: ['aws-cdk-lib', 'constructs'],
   },
   autoApproveUpgrades: true,
 });

@@ -1,8 +1,10 @@
 import * as path from 'path';
-import * as apigw from '@aws-cdk/aws-apigateway';
-import * as dynamodb from '@aws-cdk/aws-dynamodb';
-import * as lambda from '@aws-cdk/aws-lambda';
-import * as cdk from '@aws-cdk/core';
+import {
+  aws_apigateway as apigw,
+  aws_lambda as lambda,
+  aws_dynamodb as dynamodb,
+} from 'aws-cdk-lib';
+import { Construct } from 'constructs';
 
 export interface TableViewerProps {
   /**
@@ -36,11 +38,11 @@ export interface TableViewerProps {
  * Installs an endpoint in your stack that allows users to view the contents
  * of a DynamoDB table through their browser.
  */
-export class TableViewer extends cdk.Construct {
+export class TableViewer extends Construct {
 
   public readonly endpoint: string;
 
-  constructor(parent: cdk.Construct, id: string, props: TableViewerProps) {
+  constructor(parent: Construct, id: string, props: TableViewerProps) {
     super(parent, id);
 
     const handler = new lambda.Function(this, 'Rendered', {

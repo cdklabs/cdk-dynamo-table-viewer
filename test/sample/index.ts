@@ -1,5 +1,6 @@
-import * as dynamodb from '@aws-cdk/aws-dynamodb';
-import { Construct, StackProps, Stack, App } from '@aws-cdk/core';
+import { StackProps, Stack, App } from 'aws-cdk-lib';
+import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
+import { Construct } from 'constructs';
 import { TableViewer } from '../../src';
 
 class MyStack extends Stack {
