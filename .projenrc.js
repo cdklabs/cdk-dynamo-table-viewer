@@ -1,6 +1,6 @@
-const { AwsCdkConstructLibrary } = require('projen');
+const { awscdk } = require('projen');
 
-const project = new AwsCdkConstructLibrary({
+const project = new awscdk.AwsCdkConstructLibrary({
   defaultReleaseBranch: 'master',
   repositoryUrl: 'https://github.com/cdklabs/cdk-dynamo-table-viewer.git',
   name: 'cdk-dynamo-table-viewer',
