@@ -13,7 +13,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
 
   cdkVersion: '2.0.0-rc.28',
-  cdkAssert: false,
   minNodeVersion: '14.17.0',
 
   devDeps: ['ts-node', 'aws-cdk-lib', 'constructs'],
