@@ -38,7 +38,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@types/jest": "^27.0.3",
+    "@types/jest": "^27.4.0",
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
@@ -55,7 +55,7 @@
     "jsii-docgen": "^3.8.31",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
-    "projen": "^0.47.2",
+    "projen": "^0.47.14",
     "standard-version": "^9",
     "ts-jest": "^27.1.2",
     "ts-node": "^9",
@@ -65,7 +65,6 @@
     "aws-cdk-lib": "^2.0.0-rc.28",
     "constructs": "^10.0.5"
   },
-  "bundledDependencies": [],
   "keywords": [
     "cdk"
   ],
