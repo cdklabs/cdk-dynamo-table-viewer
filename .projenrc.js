@@ -12,7 +12,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
 
 
-  cdkVersion: '2.0.0-rc.28',
+  cdkVersion: '2.0.0',
   minNodeVersion: '14.17.0',
 
   devDeps: ['ts-node', 'aws-cdk-lib', 'constructs'],
@@ -37,6 +37,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
   publishToNuget: {
     dotNetNamespace: 'Cdklabs.DynamoTableViewer',
     packageId: 'Cdklabs.DynamoTableViewer',
+  },
+
+  publishToGo: {
+    moduleName: 'github.com/cdklabs/cdk-dynamo-table-viewer-go',
+    packageName: 'dynamotableviewer',
   },
 
   autoApproveOptions: {
