@@ -16,6 +16,7 @@ The library is published under the following names:
 |Python|[cdk-dynamo-table-viewer](https://pypi.org/project/cdk-dynamo-table-viewer/)
 |.NET|[Eladb.DynamoTableViewer](https://www.nuget.org/packages/Eladb.DynamoTableViewer/)
 |Java|[com.github.eladb/cdk-dynamo-table-viewer](https://search.maven.org/artifact/com.github.eladb/cdk-dynamo-table-viewer)
+|Go|[github.com/cdklabs/cdk-dynamo-table-viewer-go/dynamotableviewer](https://pkg.go.dev/github.com/cdklabs/cdk-dynamo-table-viewer-go/dynamotableviewer)
 
 
 ## Usage (TypeScript/JavaScript)
