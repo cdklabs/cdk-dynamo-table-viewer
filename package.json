@@ -139,7 +139,8 @@
         "packageId": "Cdklabs.DynamoTableViewer"
       },
       "go": {
-        "moduleName": "github.com/cdklabs/cdk-dynamo-table-viewer-go"
+        "moduleName": "github.com/cdklabs/cdk-dynamo-table-viewer-go",
+        "packageName": "dynamotableviewer"
       }
     },
     "tsc": {

@@ -41,6 +41,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   publishToGo: {
     moduleName: 'github.com/cdklabs/cdk-dynamo-table-viewer-go',
+    packageName: 'dynamotableviewer',
   },
 
   autoApproveOptions: {
