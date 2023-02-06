@@ -11,11 +11,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
 
-
-  cdkVersion: '2.0.0',
+  cdkVersion: '2.60.0',
   minNodeVersion: '14.17.0',
 
-  devDeps: ['ts-node', 'aws-cdk-lib', 'constructs'],
+  devDeps: ['ts-node', 'aws-cdk-lib', 'constructs', '@aws-sdk/client-dynamodb'],
   peerDeps: ['aws-cdk-lib', 'constructs'],
 
   catalog: {
