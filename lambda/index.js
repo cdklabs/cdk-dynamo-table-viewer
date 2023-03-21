@@ -1,14 +1,14 @@
-const { DynamoDB } = require('aws-sdk');
+const { DynamoDBClient, ScanCommand } = require("@aws-sdk/client-dynamodb");
 const render = require('./render');
 
 exports.handler = async function(event) {
   console.log('request:', JSON.stringify(event, undefined, 2));
 
-  const dynamo = new DynamoDB();
+  const dynamo = new DynamoDBClient({ });
 
-  const resp = await dynamo.scan({
+  const resp = await dynamo.send(new ScanCommand({
     TableName: process.env.TABLE_NAME,
-  }).promise();
+  }));
 
   const html = render({
     items: resp.Items,

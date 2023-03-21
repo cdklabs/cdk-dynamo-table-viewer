@@ -31,7 +31,7 @@ test('happy  flow', () => {
         TITLE: '',
       },
     },
-    Runtime: 'nodejs12.x',
+    Runtime: 'nodejs18.x',
   });
   template.hasResourceProperties('AWS::ApiGateway::RestApi', {
     Name: 'ViewerEndpoint',
@@ -64,6 +64,7 @@ test('happy  flow', () => {
             'dynamodb:GetItem',
             'dynamodb:Scan',
             'dynamodb:ConditionCheckItem',
+            'dynamodb:DescribeTable',
           ],
           Effect: 'Allow',
           Resource: assertions.Match.arrayWith([
