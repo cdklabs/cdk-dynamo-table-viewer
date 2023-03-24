@@ -40,7 +40,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@aws-sdk/client-dynamodb": "^3.297.0",
+    "@aws-sdk/client-dynamodb": "^3.298.0",
     "@types/jest": "^27",
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
@@ -54,11 +54,11 @@
     "jest": "^27",
     "jest-junit": "^15",
     "jsii": "1.x",
-    "jsii-diff": "^1.78.1",
+    "jsii-diff": "^1.79.0",
     "jsii-docgen": "^3.8.31",
-    "jsii-pacmak": "^1.78.1",
+    "jsii-pacmak": "^1.79.0",
     "npm-check-updates": "^16",
-    "projen": "^0.69.4",
+    "projen": "^0.69.5",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^9",
