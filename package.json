@@ -40,7 +40,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@aws-sdk/client-dynamodb": "^3.301.0",
+    "@aws-sdk/client-dynamodb": "^3.303.0",
     "@types/jest": "^27",
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
@@ -58,7 +58,7 @@
     "jsii-docgen": "^3.8.31",
     "jsii-pacmak": "^1.79.0",
     "npm-check-updates": "^16",
-    "projen": "^0.70.0",
+    "projen": "^0.70.1",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^9",
