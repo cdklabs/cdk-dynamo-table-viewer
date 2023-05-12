@@ -1,20 +1,20 @@
-const { awscdk } = require('projen');
+const { CdklabsConstructLibrary } = require('cdklabs-projen-project-types');
 
-const project = new awscdk.AwsCdkConstructLibrary({
+const project = new CdklabsConstructLibrary({
   defaultReleaseBranch: 'master',
+  enablePRAutoMerge: true,
+  private: false,
   repositoryUrl: 'https://github.com/cdklabs/cdk-dynamo-table-viewer.git',
   name: 'cdk-dynamo-table-viewer',
   description: 'An AWS CDK construct which exposes an endpoint with the contents of a DynamoDB table',
-  authorName: 'Elad Ben-Israel',
-  authorEmail: 'elad.benisrael@gmail.com',
-  authorUrl: 'https://github.com/eladb',
 
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
 
   cdkVersion: '2.60.0',
-  minNodeVersion: '14.17.0',
+  minNodeVersion: '16.14.0',
+  workflowNodeVersion: '16.x',
 
-  devDeps: ['ts-node', 'aws-cdk-lib', 'constructs', '@aws-sdk/client-dynamodb'],
+  devDeps: ['ts-node', 'aws-cdk-lib', 'constructs', '@aws-sdk/client-dynamodb', 'cdklabs-projen-project-types'],
   peerDeps: ['aws-cdk-lib', 'constructs'],
 
   catalog: {

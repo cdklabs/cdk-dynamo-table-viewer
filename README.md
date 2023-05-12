@@ -28,7 +28,7 @@ $ npm i cdk-dynamo-table-viewer
 Add to your CDK stack:
 
 ```ts
-import { TableViewer } from 'cdk-dynamo-table-viewer'
+declare const cookiesTable: dynamodb.Table;
 
 const viewer = new TableViewer(this, 'CookiesViewer', {
   table: cookiesTable,
