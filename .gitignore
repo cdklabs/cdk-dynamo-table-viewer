@@ -54,3 +54,4 @@ tsconfig.json
 .jsii.tabl.json
 !/rosetta/default.ts-fixture
 !/.github/workflows/auto-merge.yml
+!/.github/workflows/upgrade-cdklabs-projen-project-types-master.yml

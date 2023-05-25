@@ -8,6 +8,7 @@
     ".github/workflows/build.yml",
     ".github/workflows/pull-request-lint.yml",
     ".github/workflows/release.yml",
+    ".github/workflows/upgrade-cdklabs-projen-project-types-master.yml",
     ".github/workflows/upgrade-master.yml",
     ".gitignore",
     ".npmrc",
