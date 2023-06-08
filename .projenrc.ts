@@ -1,7 +1,7 @@
 import { CdklabsConstructLibrary } from 'cdklabs-projen-project-types';
 
 const project = new CdklabsConstructLibrary({
-  defaultReleaseBranch: 'master',
+  defaultReleaseBranch: 'main',
   projenrcTs: true,
   enablePRAutoMerge: true,
   private: false,
