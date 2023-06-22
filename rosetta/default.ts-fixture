@@ -4,7 +4,7 @@ import {
   Stack,
   aws_dynamodb as dynamodb,
 } from 'aws-cdk-lib';
-import { TableViewer } from './src';
+import { TableViewer } from 'cdk-dynamo-table-viewer';
 
 class Fixture extends Stack {
   constructor(scope: Construct, id: string) {
