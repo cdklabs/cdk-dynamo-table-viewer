@@ -59,7 +59,7 @@ export class TableViewer extends Construct {
         TABLE_NAME: props.table.tableName,
         TITLE: props.title || '',
         SORT_BY: props.sortBy || '',
-        ...process.env.endpoint && { endpoint: props.endpoint },
+        ...props.endpoint && { ENDPOINT: props.endpoint },
       },
     });
 
