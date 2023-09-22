@@ -19,7 +19,7 @@ export interface TableViewerProps {
    * The DynamoDB table to view. Note that all contents of this table will be
    * visible to the public.
    */
-  readonly table: dynamodb.Table;
+  readonly table: dynamodb.ITable;
 
   /**
    * The web page title.
