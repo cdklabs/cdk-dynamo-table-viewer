@@ -62,10 +62,10 @@ const tableViewerProps: TableViewerProps = { ... }
 ##### `table`<sup>Required</sup> <a name="cdk-dynamo-table-viewer.TableViewerProps.property.table"></a>
 
 ```typescript
-public readonly table: Table;
+public readonly table: ITable;
 ```
 
-- *Type:* [`aws-cdk-lib.aws_dynamodb.Table`](#aws-cdk-lib.aws_dynamodb.Table)
+- *Type:* [`aws-cdk-lib.aws_dynamodb.ITable`](#aws-cdk-lib.aws_dynamodb.ITable)
 
 The DynamoDB table to view.
 
