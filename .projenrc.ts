@@ -13,8 +13,8 @@ const project = new CdklabsConstructLibrary({
   authorAddress: 'aws-cdk-dev@amazon.com',
 
   cdkVersion: '2.60.0',
-  minNodeVersion: '16.14.0',
-  workflowNodeVersion: '16.x',
+  minNodeVersion: '18.0.0',
+  workflowNodeVersion: '18.x',
 
   devDeps: [
     'ts-node@^10.8.1',
