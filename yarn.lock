@@ -1168,15 +1168,15 @@
     tslib "^2.5.0"
 
 "@smithy/core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@smithy/core/-/core-1.2.0.tgz#36286de5460905708221313b8b1faebf185761e6"
-  integrity sha512-l8R89X7+hlt2FEFg+OrNq29LP3h9DfGPmO6ObwT9IXWHD6V7ycpj5u2rVQyIis26ovrgOYakl6nfgmPMm8m1IQ==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@smithy/core/-/core-1.2.1.tgz#2ee9b9894f3b2ce5eac4010ea1a85874b446f203"
+  integrity sha512-f6cwmMuHo7RIw/c184NBd2rGeGvGIX6p55HSrG5jfR3qkNYo80PHRfhzkJMq1+mv1ZjI5p8NhenWMMkIRJR4tw==
   dependencies:
     "@smithy/middleware-endpoint" "^2.2.3"
-    "@smithy/middleware-retry" "^2.0.24"
+    "@smithy/middleware-retry" "^2.0.25"
     "@smithy/middleware-serde" "^2.0.15"
     "@smithy/protocol-http" "^3.0.11"
-    "@smithy/smithy-client" "^2.1.18"
+    "@smithy/smithy-client" "^2.2.0"
     "@smithy/types" "^2.7.0"
     "@smithy/util-middleware" "^2.0.8"
     tslib "^2.5.0"
@@ -1260,15 +1260,15 @@
     "@smithy/util-middleware" "^2.0.8"
     tslib "^2.5.0"
 
-"@smithy/middleware-retry@^2.0.24":
-  version "2.0.24"
-  resolved "https://registry.yarnpkg.com/@smithy/middleware-retry/-/middleware-retry-2.0.24.tgz#556a39e7d2be32cc61862e020409d3f93e2c5be1"
-  integrity sha512-q2SvHTYu96N7lYrn3VSuX3vRpxXHR/Cig6MJpGWxd0BWodUQUWlKvXpWQZA+lTaFJU7tUvpKhRd4p4MU3PbeJg==
+"@smithy/middleware-retry@^2.0.24", "@smithy/middleware-retry@^2.0.25":
+  version "2.0.25"
+  resolved "https://registry.yarnpkg.com/@smithy/middleware-retry/-/middleware-retry-2.0.25.tgz#ae948f4a1ad5968bc315f07df930a55c09ffe040"
+  integrity sha512-FXhafCPvx/9L9OgHJ3cdo/pD1f7ngC7DKsjDV2J7k6LO/Yl69POoBLk4sI1OZPUGc4dfxriENlTma9Nj1hI+IQ==
   dependencies:
     "@smithy/node-config-provider" "^2.1.8"
     "@smithy/protocol-http" "^3.0.11"
     "@smithy/service-error-classification" "^2.0.8"
-    "@smithy/smithy-client" "^2.1.18"
+    "@smithy/smithy-client" "^2.2.0"
     "@smithy/types" "^2.7.0"
     "@smithy/util-middleware" "^2.0.8"
     "@smithy/util-retry" "^2.0.8"
@@ -1374,12 +1374,14 @@
     "@smithy/util-utf8" "^2.0.2"
     tslib "^2.5.0"
 
-"@smithy/smithy-client@^2.1.18":
-  version "2.1.18"
-  resolved "https://registry.yarnpkg.com/@smithy/smithy-client/-/smithy-client-2.1.18.tgz#f8ce2c0e9614f207256ddcd992403aff40750546"
-  integrity sha512-7FqdbaJiVaHJDD9IfDhmzhSDbpjyx+ZsfdYuOpDJF09rl8qlIAIlZNoSaflKrQ3cEXZN2YxGPaNWGhbYimyIRQ==
+"@smithy/smithy-client@^2.1.18", "@smithy/smithy-client@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@smithy/smithy-client/-/smithy-client-2.2.0.tgz#9865981a2f49dd0e9ef68193aebcd5654cdd7f00"
+  integrity sha512-C/bkNue5H5Obgl83SnlBt4v6VM68CqIjIELh3vAabud87xFYznLNKtj6Qb69Z+QOnLp9T+We++sEem/f2AHE+Q==
   dependencies:
+    "@smithy/middleware-endpoint" "^2.2.3"
     "@smithy/middleware-stack" "^2.0.9"
+    "@smithy/protocol-http" "^3.0.11"
     "@smithy/types" "^2.7.0"
     "@smithy/util-stream" "^2.0.23"
     tslib "^2.5.0"
@@ -1438,26 +1440,26 @@
     tslib "^2.5.0"
 
 "@smithy/util-defaults-mode-browser@^2.0.22":
-  version "2.0.22"
-  resolved "https://registry.yarnpkg.com/@smithy/util-defaults-mode-browser/-/util-defaults-mode-browser-2.0.22.tgz#8ef8c36b8c3c2f98f7a62278c3c684d659134269"
-  integrity sha512-qcF20IHHH96FlktvBRICDXDhLPtpVmtksHmqNGtotb9B0DYWXsC6jWXrkhrrwF7tH26nj+npVTqh9isiFV1gdA==
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/@smithy/util-defaults-mode-browser/-/util-defaults-mode-browser-2.0.23.tgz#27bce42b7a55974ed4aff5b2b870256ce383613a"
+  integrity sha512-2u+7t7Wgz1jlfsf6il3pz6DIzyJHS3qrnNnmATICm00pQeqp2D4kUOYauOgKGIeKgVpwzzq8+hFQe749r3xR5w==
   dependencies:
     "@smithy/property-provider" "^2.0.16"
-    "@smithy/smithy-client" "^2.1.18"
+    "@smithy/smithy-client" "^2.2.0"
     "@smithy/types" "^2.7.0"
     bowser "^2.11.0"
     tslib "^2.5.0"
 
 "@smithy/util-defaults-mode-node@^2.0.29":
-  version "2.0.29"
-  resolved "https://registry.yarnpkg.com/@smithy/util-defaults-mode-node/-/util-defaults-mode-node-2.0.29.tgz#6b210aede145a6bf4bd83d9f465948fb300ca577"
-  integrity sha512-+uG/15VoUh6JV2fdY9CM++vnSuMQ1VKZ6BdnkUM7R++C/vLjnlg+ToiSR1FqKZbMmKBXmsr8c/TsDWMAYvxbxQ==
+  version "2.0.30"
+  resolved "https://registry.yarnpkg.com/@smithy/util-defaults-mode-node/-/util-defaults-mode-node-2.0.30.tgz#12c4c737a9f8b151cfbd951348cdf94febd083dd"
+  integrity sha512-nmcmEyRlClNprp7mBnUzfmW6HrKQK+yvl+cyXCRUoQSxRvZuLDrztV+JD+zr3qV/oirEc4Q0QNIrrhTDCE6JeA==
   dependencies:
     "@smithy/config-resolver" "^2.0.21"
     "@smithy/credential-provider-imds" "^2.1.4"
     "@smithy/node-config-provider" "^2.1.8"
     "@smithy/property-provider" "^2.0.16"
-    "@smithy/smithy-client" "^2.1.18"
+    "@smithy/smithy-client" "^2.2.0"
     "@smithy/types" "^2.7.0"
     tslib "^2.5.0"
 
@@ -1587,7 +1589,6 @@
   version "7.20.4"
   resolved "https://registry.yarnpkg.com/@types/babel__traverse/-/babel__traverse-7.20.4.tgz#ec2c06fed6549df8bc0eb4615b683749a4a92e1b"
   integrity sha512-mSM/iKUk5fDDrEV/e83qY+Cr3I1+Q3qqTuEn++HAWYjEa1+NxZr6CNrcJGf2ZTnq4HoFGC3zaTPZTobCzCFukA==
-
   dependencies:
     "@babel/types" "^7.20.7"
 
@@ -2778,9 +2779,9 @@ downlevel-dts@^0.11.0:
     typescript next
 
 electron-to-chromium@^1.4.601:
-  version "1.4.615"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.615.tgz#b1c41839962d2e4e63dca05519da9040e34848c2"
-  integrity sha512-/bKPPcgZVUziECqDc+0HkT87+0zhaWSZHNXqF8FLd2lQcptpmUFwoCSWjCdOng9Gdq+afKArPdEg/0ZW461Eng==
+  version "1.4.616"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.616.tgz#4bddbc2c76e1e9dbf449ecd5da3d8119826ea4fb"
+  integrity sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -6016,9 +6017,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.4.0-dev.20231221"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20231221.tgz#7464c612124597325426b44b6ce695476e45339d"
-  integrity sha512-vsu9WExlMAmSoA/elxcmBTyRDyf9REJCKV2DowCmSpp+oqv+oq0yku8490q1r2YBC7o9DP+u/q58J5sjqaAD+g==
+  version "5.4.0-dev.20231222"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20231222.tgz#1262e74f7ae1066e6a323f9b5616dc85f8e0d924"
+  integrity sha512-SK3Hak67HL8l08jLRYOFF0cXL0ODM/tvA6w2+HOOYKijxGOmpc0xWz7zvOi6RLihS9BGgBG6Hk1zD/bN4qR4Qg==
 
 typescript@~3.9.10:
   version "3.9.10"
