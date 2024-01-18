@@ -2223,10 +2223,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdklabs-projen-project-types@^0.1.183:
-  version "0.1.183"
-  resolved "https://registry.yarnpkg.com/cdklabs-projen-project-types/-/cdklabs-projen-project-types-0.1.183.tgz#54515fd4324a1284cdd49ce14733b251c4eb51cd"
-  integrity sha512-QHFxfrOcDXJJLi3LBDEsFIsQLZ7+2efHZyDMonvf0alq9FWylHSg5xFuTtg/CagSuo2kyOWKlwGXTV5sDeKtZw==
+cdklabs-projen-project-types@^0.1.186:
+  version "0.1.186"
+  resolved "https://registry.yarnpkg.com/cdklabs-projen-project-types/-/cdklabs-projen-project-types-0.1.186.tgz#7bf27240000b86d7b495df62abbc393606e96677"
+  integrity sha512-EF1DMNFFsP+BH/eTB8/Qm8qSd6Sok50CKNrit1tIltJGYOqfJy7CciSrY30NZPDar+/cSgdDv5F2iUs6neW0dw==
   dependencies:
     yaml "^2.3.4"
 
@@ -5155,9 +5155,9 @@ process-nextick-args@~2.0.0:
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
 projen@^0.78.2:
-  version "0.78.3"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.78.3.tgz#acbe5222fda6cea0e7b81a1ebd950f2d03610bae"
-  integrity sha512-QkHuynNspKg5KpGa4uZdnf2yL0VbBBfguYgU7VZWlM/G1z/zAcGfblrjqO6NebIXCYwL/k33+cRgW8MDZUjnvA==
+  version "0.78.13"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.78.13.tgz#5c6693ababa4f2e7d93759c722a35d41c9c2e691"
+  integrity sha512-ihL1lcfmi7M0EA7qgdXGja2SLLc6vtsQ1Wd2RqqxOuFnchw9/kZubdrxy38J8iI36AEwb0Qucb1uLTuwFhl7Qw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
