@@ -46,7 +46,7 @@
   "devDependencies": {
     "@aws-cdk/integ-runner": "latest",
     "@aws-cdk/integ-tests-alpha": "latest",
-    "@aws-sdk/client-dynamodb": "^3.788.0",
+    "@aws-sdk/client-dynamodb": "^3.796.0",
     "@types/jest": "^27",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^7",
