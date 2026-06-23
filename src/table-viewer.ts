@@ -47,7 +47,7 @@ export class TableViewer extends Construct {
 
     const handler = new lambda.Function(this, 'Rendered', {
       code: lambda.Code.fromAsset(path.join(__dirname, '..', 'lambda')),
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_22_X,
       handler: 'index.handler',
       environment: {
         TABLE_NAME: props.table.tableName,
