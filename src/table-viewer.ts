@@ -32,6 +32,12 @@ export interface TableViewerProps {
    * @default - No sort
    */
   readonly sortBy?: string;
+
+  /*
+   * The fully qualified endpoint of the webservice. This is only for using a custom endpoint (for example, when using a local version of DynamoDB).
+   * @default - No endpoint
+   */
+  readonly endpoint?: string;
 }
 
 /**
@@ -53,6 +59,7 @@ export class TableViewer extends Construct {
         TABLE_NAME: props.table.tableName,
         TITLE: props.title || '',
         SORT_BY: props.sortBy || '',
+        ...props.endpoint && { ENDPOINT: props.endpoint },
       },
     });
 
