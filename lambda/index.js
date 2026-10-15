@@ -4,7 +4,9 @@ const render = require('./render');
 exports.handler = async function(event) {
   console.log('request:', JSON.stringify(event, undefined, 2));
 
-  const dynamo = new DynamoDBClient({ });
+  const dynamo = new DynamoDBClient({
+    ...process.env.ENDPOINT && { endpoint: process.env.ENDPOINT }
+  });
 
   const resp = await dynamo.send(new ScanCommand({
     TableName: process.env.TABLE_NAME,
