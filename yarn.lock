@@ -1924,10 +1924,10 @@ console-static-text@^0.3.5:
   resolved "https://registry.yarnpkg.com/console-static-text/-/console-static-text-0.3.5.tgz#a786e82c1b05607fa631582b7850d839517ec9a6"
   integrity sha512-/iyYUmmAGDUQXbDA3drgIUmOEi0FB2TxfmcFt24YhWQaEsaWh3Cf+30vdS4lhQTX2713EdxQljRqoETLkzPk3w==
 
-constructs@10.0.5:
-  version "10.0.5"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.5.tgz#48c0402f1b98bbf5664efff74a8015e6e8a9f41e"
-  integrity sha512-IwOwekzrASFC3qt4ozCtV09rteAIAesuCGsW0p+uBfqHd2XcvA5CXqJjgf4eUqm6g8e/noXlVCMDWwC8GaLtrg==
+constructs@10.5.1:
+  version "10.5.1"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.5.1.tgz#5b5809b4b42e49e41f88f06dea1b14837cad4694"
+  integrity sha512-f/TfFXiS3G/yVIXDjOQn9oTlyu9Wo7Fxyjj7lb8r92iO81jR2uST+9MstxZTmDGx/CgIbxCXkFXgupnLTNxQZg==
 
 constructs@^10.5.0:
   version "10.8.1"

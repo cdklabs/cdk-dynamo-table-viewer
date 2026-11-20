@@ -13,7 +13,6 @@ const project = new CdklabsConstructLibrary({
   authorAddress: 'aws-cdk-dev@amazon.com',
 
   cdkVersion: '2.60.0',
-  constructsVersion: '10.0.5',
 
   devDeps: [
     'ts-node@^10.8.1',
