@@ -58,8 +58,6 @@ test('happy  flow', () => {
         {
           Action: [
             'dynamodb:BatchGetItem',
-            'dynamodb:GetRecords',
-            'dynamodb:GetShardIterator',
             'dynamodb:Query',
             'dynamodb:GetItem',
             'dynamodb:Scan',
@@ -67,11 +65,19 @@ test('happy  flow', () => {
             'dynamodb:DescribeTable',
           ],
           Effect: 'Allow',
-          Resource: assertions.Match.arrayWith([
-            {
-              'Fn::GetAtt': ['MyTable794EDED1', 'Arn'],
-            },
-          ]),
+          Resource: {
+            'Fn::GetAtt': ['MyTable794EDED1', 'Arn'],
+          },
+        },
+        {
+          Action: [
+            'dynamodb:GetRecords',
+            'dynamodb:GetShardIterator',
+          ],
+          Effect: 'Allow',
+          Resource: {
+            'Fn::GetAtt': ['MyTable794EDED1', 'Arn'],
+          },
         },
       ]),
       Version: '2012-10-17',

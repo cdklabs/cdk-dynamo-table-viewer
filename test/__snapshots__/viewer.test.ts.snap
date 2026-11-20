@@ -131,8 +131,6 @@ Object {
             Object {
               "Action": Array [
                 "dynamodb:BatchGetItem",
-                "dynamodb:GetRecords",
-                "dynamodb:GetShardIterator",
                 "dynamodb:Query",
                 "dynamodb:GetItem",
                 "dynamodb:Scan",
@@ -140,17 +138,25 @@ Object {
                 "dynamodb:DescribeTable",
               ],
               "Effect": "Allow",
-              "Resource": Array [
-                Object {
-                  "Fn::GetAtt": Array [
-                    "MyTable794EDED1",
-                    "Arn",
-                  ],
-                },
-                Object {
-                  "Ref": "AWS::NoValue",
-                },
+              "Resource": Object {
+                "Fn::GetAtt": Array [
+                  "MyTable794EDED1",
+                  "Arn",
+                ],
+              },
+            },
+            Object {
+              "Action": Array [
+                "dynamodb:GetRecords",
+                "dynamodb:GetShardIterator",
               ],
+              "Effect": "Allow",
+              "Resource": Object {
+                "Fn::GetAtt": Array [
+                  "MyTable794EDED1",
+                  "Arn",
+                ],
+              },
             },
           ],
           "Version": "2012-10-17",
@@ -346,6 +352,9 @@ Object {
         "viewerViewerEndpointproxy103C52F5",
         "viewerViewerEndpointANY4A9252D2",
       ],
+      "Metadata": Object {
+        "aws:cdk:do-not-refactor": true,
+      },
       "Properties": Object {
         "Description": "Automatically created by the RestApi construct",
         "RestApiId": Object {
