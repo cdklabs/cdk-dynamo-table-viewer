@@ -4,6 +4,8 @@
 
 ### TableViewer <a name="TableViewer" id="cdk-dynamo-table-viewer.TableViewer"></a>
 
+- *Implements:* constructs.IConstruct, constructs.IDependable
+
 Installs an endpoint in your stack that allows users to view the contents of a DynamoDB table through their browser.
 
 #### Initializers <a name="Initializers" id="cdk-dynamo-table-viewer.TableViewer.Initializer"></a>
