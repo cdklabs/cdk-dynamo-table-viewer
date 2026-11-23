@@ -47,7 +47,7 @@
   "devDependencies": {
     "@aws-cdk/integ-runner": "latest",
     "@aws-cdk/integ-tests-alpha": "latest",
-    "@aws-sdk/client-dynamodb": "^3.1173.0",
+    "@aws-sdk/client-dynamodb": "^3.1176.0",
     "@stylistic/eslint-plugin": "^2",
     "@types/jest": "^27",
     "@types/node": "^18",
@@ -66,7 +66,7 @@
     "jsii-diff": "^1.143.0",
     "jsii-docgen": "^10.5.0",
     "jsii-pacmak": "^1.143.0",
-    "jsii-rosetta": "^5.9.75",
+    "jsii-rosetta": "^5.9.76",
     "projen": "^0.105.7",
     "ts-jest": "^27",
     "ts-node": "^10.8.1",
